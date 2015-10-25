@@ -4,10 +4,10 @@ import argparse
 
 class Hello(object):
   def __init__(self, name='world'):
-    self.name = name
+    self._name = name
 
   def hello(self):
-    print("Hello %s!" % self.name)
+    print("Hello %s!" % self._name)
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='Hello greeter')
